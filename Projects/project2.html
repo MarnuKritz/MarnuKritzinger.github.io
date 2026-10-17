@@ -4,122 +4,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title | Your Name</title>
+    <meta name="description" content="[Project summary]">
+    <title>[Project Title] | Marnu Kritzinger</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="case-study-page">
 
-    <header class="site-header" id="site-header">
+<header class="site-header" id="site-header">
         <nav class="navigation" aria-label="Main navigation">
-            <a class="logo" href="index.html">YOUR NAME<span>.</span></a>
-
-            <div class="nav-links">
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#experience">Experience</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
+            <a class="logo" href="index.html">Marnu Kritzinger<span>.</span></a>
         </nav>
-    </header>
+</header>
 
-    <main class="detail-page">
+<div class="back-to-projects">
+    <a href="../index.html#projects">
+        <span aria-hidden="true">←</span>
+        Back to Projects
+    </a>
+</div>
 
-        <a class="back-link" href="../index.html#projects">
-            ← Back to projects
-        </a>
+<main class="case-study">
 
-        <section class="detail-hero">
-            <p class="eyebrow">PROJECT CATEGORY</p>
+    <!-- HERO: INTRODUCTION + FULL-WIDTH IMAGE -->
+    <section class="case-study-hero case-study-hero--full">
 
-            <h1>Project Title<span>.</span></h1>
+        <div class="case-study-hero-content">
+            <p class="case-study-eyebrow">Project 02 / Case Study</p>
 
-            <p class="detail-intro">
-                Write a short overview of the project, what you set out
-                to accomplish, and what your contribution was.
+            <h1>[Project Title]</h1>
+
+            <p class="case-study-hero-intro">
+                [Introduce the project, its purpose, and your contribution.]
             </p>
 
-            <div class="detail-meta">
-                <div>
-                    <span>ROLE</span>
-                    <p>Your role</p>
-                </div>
-
-                <div>
-                    <span>TIMEFRAME</span>
-                    <p>Month Year – Month Year</p>
-                </div>
-
-                <div>
-                    <span>TOOLS</span>
-                    <p>Relevant tools and technologies</p>
-                </div>
+            <div class="case-study-meta">
+                <p><strong>My role:</strong> [Your role]</p>
+                <p><strong>Project period:</strong> [Timeframe]</p>
+                <p><strong>Team:</strong> [Team size or individual project]</p>
             </div>
-        </section>
-
-
-        <section class="detail-section">
-            <h2>Overview<span>.</span></h2>
-
-            <p>
-                Describe the problem, project goals, and constraints.
-                Explain why the project was undertaken.
-            </p>
-        </section>
-
-
-        <section class="detail-section">
-            <h2>Design & Implementation<span>.</span></h2>
-
-            <div class="detail-image-placeholder">
-                Add a CAD render, photograph, diagram, or screenshot
-            </div>
-
-            <p>
-                Explain your design choices, methods, tools, and the
-                reasoning behind important engineering decisions.
-            </p>
-        </section>
-
-
-        <section class="detail-section">
-            <h2>Testing & Results<span>.</span></h2>
-
-            <div class="detail-image-placeholder">
-                Add testing photographs, results, or supporting figures
-            </div>
-
-            <p>
-                Describe how the project was tested, what worked,
-                what did not work as expected, and what you learned.
-            </p>
-        </section>
-
-
-        <section class="detail-section">
-            <h2>What I Learned<span>.</span></h2>
-
-            <p>
-                Reflect on the skills you developed and what you would
-                improve if you revisited the project.
-            </p>
-        </section>
-
-
-        <div class="detail-footer">
-            <a class="button" href="index.html#projects">
-                Back to all projects
-            </a>
         </div>
 
-    </main>
+        <figure class="case-study-hero-image case-study-hero-image--full">
+            <img src="../images/project2-hero.jpg"
+                 alt="[Description of the overall project]">
+            <figcaption>[Optional hero image caption]</figcaption>
+        </figure>
 
-    <footer class="site-footer">
-        <p>© <span id="current-year"></span> Your Name</p>
-        <a href="index.html">Home ↑</a>
+    </section>
+
+    <!-- SKILLS APPLIED -->
+    <section class="case-study-skills" aria-labelledby="skills-title">
+
+        <div class="case-study-skills-heading">
+            <p class="case-study-eyebrow">Technical Overview</p>
+            <h2 id="skills-title">Skills Applied</h2>
+        </div>
+
+        <div class="case-study-skills-list">
+            <span class="case-study-skill-tag">[Skill 1]</span>
+            <span class="case-study-skill-tag">[Skill 2]</span>
+            <span class="case-study-skill-tag">[Skill 3]</span>
+            <span class="case-study-skill-tag">[Skill 4]</span>
+            <span class="case-study-skill-tag">[Skill 5]</span>
+        </div>
+
+    </section>
+
+    <!-- 01: PROBLEM & OBJECTIVES -->
+    <section class="case-study-section" id="problem">
+
+        <div class="case-study-section-top">
+            <div class="case-study-section-intro">
+                <p class="case-study-eyebrow">01 / Engineering Process</p>
+                <h2>Problem &amp; Objectives</h2>
+                <p>
+                    [Explain the problem, project requirements, and what
+                    the system was intended to accomplish.]
+                </p>
+            </div>
+
+            <div class="case-study-section-figure">
+                <div class="case-study-carousel" data-case-carousel>
+                    <div class="case-study-carousel-viewport">
+
+                        <figure class="case-study-carousel-slide">
+                            <img src="../images/project2-problem-1.jpg"
+                                 alt="[Initial setup or project context]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../images/project2-problem-2.jpg"
+                                 alt="[Initial concept or requirements]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="case-study-carousel-controls">
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-previous>
+                            ← Previous
+                        </button>
+
+                        <span class="case-study-carousel-position"
+                              data-carousel-position aria-live="polite">
+                            1 / 2
+                        </span>
+
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-next>
+                            Next →
+                        </button>
+                    </div>
+
+                    <div class="case-study-carousel-dots"
+                         data-carousel-dots></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study-section-details">
+            <h3>Objectives and Constraints</h3>
+            <p>
+                [Describe the main requirements, constraints, and criteria
+                for judging the project's success.]
+            </p>
+        </div>
+
+    </section>
+
+    <!-- 02: ENGINEERING DESIGN -->
+    <section class="case-study-section" id="design">
+
+        <div class="case-study-section-top">
+            <div class="case-study-section-intro">
+                <p class="case-study-eyebrow">02 / Engineering Process</p>
+                <h2>Engineering Design</h2>
+                <p>
+                    [Describe the design approach, calculations, CAD,
+                    circuit design, algorithms, or component selection
+                    that were relevant to this project.]
+                </p>
+            </div>
+
+            <div class="case-study-section-figure">
+                <div class="case-study-carousel" data-case-carousel>
+                    <div class="case-study-carousel-viewport">
+
+                        <figure class="case-study-carousel-slide">
+                            <img src="../images/project2-design-1.jpg"
+                                 alt="[Design, CAD model, or schematic]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../images/project2-design-2.jpg"
+                                 alt="[Detailed design or component]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="case-study-carousel-controls">
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-previous>
+                            ← Previous
+                        </button>
+
+                        <span class="case-study-carousel-position"
+                              data-carousel-position aria-live="polite">
+                            1 / 2
+                        </span>
+
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-next>
+                            Next →
+                        </button>
+                    </div>
+
+                    <div class="case-study-carousel-dots"
+                         data-carousel-dots></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study-section-details">
+            <h3>Key Design Decisions</h3>
+            <p>
+                [Explain important design decisions, alternatives considered,
+                and why you selected your final approach.]
+            </p>
+        </div>
+
+    </section>
+
+    <!-- 03: FABRICATION & INTEGRATION -->
+    <section class="case-study-section" id="fabrication">
+
+        <div class="case-study-section-top">
+            <div class="case-study-section-intro">
+                <p class="case-study-eyebrow">03 / Engineering Process</p>
+                <h2>Fabrication &amp; Integration</h2>
+                <p>
+                    [Describe how you built the design and integrated
+                    its mechanical, electrical, and software components.]
+                </p>
+            </div>
+
+            <div class="case-study-section-figure">
+                <div class="case-study-carousel" data-case-carousel>
+                    <div class="case-study-carousel-viewport">
+
+                        <figure class="case-study-carousel-slide">
+                            <img src="../images/project2-fabrication-1.jpg"
+                                 alt="[Fabrication or assembly process]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../images/project2-fabrication-2.jpg"
+                                 alt="[Integrated component or subsystem]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="case-study-carousel-controls">
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-previous>
+                            ← Previous
+                        </button>
+
+                        <span class="case-study-carousel-position"
+                              data-carousel-position aria-live="polite">
+                            1 / 2
+                        </span>
+
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-next>
+                            Next →
+                        </button>
+                    </div>
+
+                    <div class="case-study-carousel-dots"
+                         data-carousel-dots></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study-section-details">
+            <h3>Build and Integration</h3>
+            <p>
+                [Explain your contribution to manufacturing, assembly,
+                wiring, programming, and integration challenges.]
+            </p>
+        </div>
+
+    </section>
+
+    <!-- 04: TESTING & ITERATION -->
+    <section class="case-study-section" id="testing">
+
+        <div class="case-study-section-top">
+            <div class="case-study-section-intro">
+                <p class="case-study-eyebrow">04 / Engineering Process</p>
+                <h2>Testing &amp; Iteration</h2>
+                <p>
+                    [Explain how you tested the system, what you observed,
+                    and how you used those observations to improve it.]
+                </p>
+            </div>
+
+            <div class="case-study-section-figure">
+                <div class="case-study-carousel" data-case-carousel>
+                    <div class="case-study-carousel-viewport">
+
+                        <figure class="case-study-carousel-slide">
+                            <img src="../images/project2-testing-1.jpg"
+                                 alt="[Test setup or measurement]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../images/project2-testing-2.jpg"
+                                 alt="[Later test or design iteration]">
+                            <figcaption>[Image caption]</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="case-study-carousel-controls">
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-previous>
+                            ← Previous
+                        </button>
+
+                        <span class="case-study-carousel-position"
+                              data-carousel-position aria-live="polite">
+                            1 / 2
+                        </span>
+
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-next>
+                            Next →
+                        </button>
+                    </div>
+
+                    <div class="case-study-carousel-dots"
+                         data-carousel-dots></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="case-study-section-details">
+            <h3>Testing and Improvements</h3>
+            <p>
+                [Describe a specific test, issue, observation, and the
+                change you made in response.]
+            </p>
+        </div>
+
+    </section>
+
+    <!-- 05: RESULTS — ONE IMAGE ONLY -->
+    <section class="case-study-section case-study-results" id="results">
+
+        <div class="case-study-results-copy">
+            <p class="case-study-eyebrow">05 / Outcome</p>
+            <h2>Results</h2>
+
+            <p>
+                [Summarize what the project achieved and how the final
+                outcome compared with the original objectives.]
+            </p>
+
+            <p>
+                <strong>Key outcome:</strong>
+                [Add a measurable result or explain what you demonstrated.]
+            </p>
+
+            <p>
+                <strong>What I learned:</strong>
+                [Explain an important lesson or possible next improvement.]
+            </p>
+        </div>
+
+        <figure class="case-study-results-image">
+            <img src="../images/project2-results.jpg"
+                 alt="[Description of the final project result]">
+            <figcaption>[Caption for the final result image]</figcaption>
+        </figure>
+
+    </section>
+
+    <footer class="case-study-footer">
+        <a href="../index.html#projects">← Return to all projects</a>
     </footer>
 
-    <script src="script.js"></script>
+</main>
 
+<div class="image-lightbox" id="image-lightbox"
+     aria-hidden="true">
+    <button class="image-lightbox-close"
+            id="image-lightbox-close"
+            type="button"
+            aria-label="Close enlarged image">
+        &times;
+    </button>
+
+    <img id="image-lightbox-image" src="" alt="">
+    <p id="image-lightbox-caption"></p>
+</div>
+
+<script src="../script.js"></script>
 </body>
 </html>

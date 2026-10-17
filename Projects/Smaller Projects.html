@@ -4,88 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smaller Projects | Your Name</title>
+
+    <title>Smaller Projects | Marnu Kritzinger</title>
+    <meta name="description"
+          content="Additional engineering projects by Marnu Kritzinger, UBC Engineering Physics student.">
+
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="site-header" id="site-header">
         <nav class="navigation" aria-label="Main navigation">
-            <a class="logo" href="index.html">YOUR NAME<span>.</span></a>
-
-            <div class="nav-links">
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#experience">Experience</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
+            <a class="logo" href="index.html">Marnu Kritzinger<span>.</span></a>
         </nav>
     </header>
 
-    <main class="detail-page">
-
-        <a class="back-link" href="../index.html#projects">
-            ← Back to main projects
+    <div class="back-to-projects">
+        <a href="../index.html#projects">
+            <span aria-hidden="true">←</span>
+            Back to Projects
         </a>
+    </div>
 
-        <section class="detail-hero">
-            <p class="eyebrow">EXPERIMENTS & BUILDS</p>
-            <h1>Smaller Projects<span>.</span></h1>
+    <main class="small-projects-page">
 
-            <p class="detail-intro">
-                A collection of smaller projects, prototypes, experiments,
-                and technical explorations.
+        <!-- PAGE INTRODUCTION -->
+        <section class="small-projects-intro">
+            <p class="component-label">ENGINEERING PORTFOLIO</p>
+
+            <h1>Smaller Projects</h1>
+
+            <p>
+                A collection of additional engineering projects exploring
+                mechanical design, electronics, fabrication, and systems
+                integration. These projects demonstrate my broader
+                technical interests, practical experience, and approach
+                to engineering problem-solving.
             </p>
         </section>
 
-        <section class="content-section small-project-grid">
 
-            <article class="project-card">
-                <div class="project-visual">
-                    <span>PROJECT 01</span>
+        <!-- ======================================
+             PROJECT 1 — REPLACE WITH YOUR PROJECT
+        ======================================= -->
+        <section class="small-project" id="project-one">
+
+            <div class="small-project-content">
+
+                <div class="small-project-heading">
+                    <div>
+                        <p class="component-label">PROJECT 01</p>
+                        <h2>[Project Name]</h2>
+                    </div>
+
+                    <!-- Change status-in-progress to status-finished -->
+                    <span class="project-status status-in-progress">
+                        In Progress
+                    </span>
                 </div>
 
-                <div class="project-info">
-                    <p class="project-type">CATEGORY</p>
-                    <h3>Project Title</h3>
-                    <p>Add a short description of the build or experiment.</p>
-                </div>
-            </article>
+                <p class="small-project-category">
+                    Mechanical Design · Prototyping
+                </p>
 
-            <article class="project-card">
-                <div class="project-visual">
-                    <span>PROJECT 02</span>
+                <h3>Project Description & Goals</h3>
+                <p>
+                    Explain the problem you wanted to solve, the purpose
+                    of the project, and the main objectives or constraints
+                    that guided your design.
+                </p>
+
+                <h3>Design Choices</h3>
+                <p>
+                    Describe your main engineering decisions, including
+                    the design approach, component selection, calculations,
+                    or CAD work. Explain why you chose this approach.
+                </p>
+
+                <h3>Fabrication & Testing</h3>
+                <p>
+                    Describe the manufacturing, assembly, or testing you
+                    have completed so far. Include any challenges you
+                    encountered and how you addressed them.
+                </p>
+
+                <!-- Include this subsection for unfinished projects -->
+                <div class="future-development">
+                    <h3>Future Development</h3>
+                    <p>
+                        Explain what remains to be completed, what you
+                        plan to test next, and which improvements you
+                        would make in a future iteration.
+                    </p>
                 </div>
 
-                <div class="project-info">
-                    <p class="project-type">CATEGORY</p>
-                    <h3>Project Title</h3>
-                    <p>Add a short description of the build or experiment.</p>
-                </div>
-            </article>
+            </div>
 
-            <article class="project-card">
-                <div class="project-visual">
-                    <span>PROJECT 03</span>
-                </div>
+            <!-- TWO STACKED PROJECT IMAGES -->
+            <div class="small-project-images">
 
-                <div class="project-info">
-                    <p class="project-type">CATEGORY</p>
-                    <h3>Project Title</h3>
-                    <p>Add a short description of the build or experiment.</p>
-                </div>
-            </article>
+                <figure>
+                    <img
+                        src="../images/REPLACE-WITH-DESIGN-IMAGE.png"
+                        alt="Design or CAD model for Project One"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        Design and engineering development
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="../images/REPLACE-WITH-PROJECT-IMAGE.png"
+                        alt="Prototype or current build for Project One"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        Prototype and physical implementation
+                    </figcaption>
+                </figure>
+
+            </div>
 
         </section>
 
+
+        <!-- ======================================
+             PROJECT 2 — REPLACE WITH YOUR PROJECT
+        ======================================= -->
+        <section class="small-project" id="project-two">
+
+            <div class="small-project-content">
+
+                <div class="small-project-heading">
+                    <div>
+                        <p class="component-label">PROJECT 02</p>
+                        <h2>[Project Name]</h2>
+                    </div>
+
+                    <span class="project-status status-finished">
+                        Finished
+                    </span>
+                </div>
+
+                <p class="small-project-category">
+                    Electronics · Systems Integration
+                </p>
+
+                <h3>Project Description & Goals</h3>
+                <p>
+                    Describe the project's purpose, the problem it
+                    addressed, and the intended outcome.
+                </p>
+
+                <h3>Design Choices</h3>
+                <p>
+                    Explain the most important technical decisions you
+                    made and the reasoning behind them.
+                </p>
+
+                <h3>Fabrication & Testing</h3>
+                <p>
+                    Summarize how you built or implemented the design,
+                    how you tested it, and what the final result
+                    demonstrated.
+                </p>
+
+                <!-- Optional: remove if there is no meaningful next step -->
+                <div class="future-development">
+                    <h3>Future Development</h3>
+                    <p>
+                        Describe any worthwhile improvements or
+                        extensions you would explore in the future.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="small-project-images">
+
+                <figure>
+                    <img
+                        src="../images/REPLACE-WITH-DESIGN-IMAGE-2.png"
+                        alt="Design documentation for Project Two"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        Initial design and planning
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="../images/REPLACE-WITH-PROJECT-IMAGE-2.png"
+                        alt="Completed Project Two"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        Completed implementation
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- Add more project sections by copying a small-project section -->
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer class="site-footer">
-        <p>© <span id="current-year"></span> Your Name</p>
-        <a href="index.html">Home ↑</a>
+        <p>
+            &copy; <span id="year"></span> Marnu Kritzinger
+        </p>
     </footer>
 
-    <script src="script.js"></script>
+
+    <!-- IMAGE LIGHTBOX -->
+    <!-- Keep this if you are using the existing lightbox JavaScript. -->
+    <div class="image-lightbox"
+         id="image-lightbox"
+         aria-hidden="true">
+
+        <button class="image-lightbox-close"
+                id="image-lightbox-close"
+                type="button"
+                aria-label="Close enlarged image">
+            &times;
+        </button>
+
+        <img id="image-lightbox-image" src="" alt="">
+
+        <p id="image-lightbox-caption"></p>
+    </div>
+
+
+    <script src="../script.js"></script>
 
 </body>
 </html>
