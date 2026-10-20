@@ -466,6 +466,13 @@ main {
     border-bottom: 1px solid var(--border);
 }
 
+.project-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .project-visual span {
     color: var(--accent);
     font-size: 0.75rem;
@@ -2446,4 +2453,27 @@ main {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.project-title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-title-row h3 {
+    margin: 0;
+}
+
+.project-status {
+    display: inline-block;
+    padding: 4px 9px;
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.4;
+    white-space: nowrap;
 }
