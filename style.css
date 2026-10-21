@@ -1903,12 +1903,19 @@ main {
     cursor: zoom-in;
 }
 
+
+
 .small-project-images figcaption {
-    margin-top: 9px;
-    color: var(--muted);
-    font-size: 0.83rem;
-    line-height: 1.5;
+    margin-top: 0;
+    padding: 12px 14px;
+
+    color: var(--muted, #B9BDB8);
+    font-size: 0.85rem;
+    line-height: 1.6;
+
+    background: var(--surface, #292E2B);
 }
+
 
 /* Mobile layout */
 
@@ -2476,4 +2483,317 @@ main {
     font-weight: 600;
     line-height: 1.4;
     white-space: nowrap;
+}
+
+.pros-cons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+/* Project 3: consistent text-left, image-right layout */
+.case-study-section-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 2rem;
+    align-items: start;
+    width: 100%;
+}
+
+.case-study-section-intro {
+    min-width: 0;
+    width: 100%;
+}
+
+.case-study-section-intro p {
+    margin-top: 0;
+}
+
+.case-study-carousel,
+.case-study-section-top .case-study-section-figure {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.case-study-carousel-viewport {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.case-study-carousel-slide {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.case-study-carousel-slide img,
+.case-study-section-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.case-study-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.case-study-carousel-position {
+    flex: 1;
+    text-align: center;
+}
+
+.case-study-carousel-dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    .case-study-section-top {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+
+.technician-company-link {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto 48px;
+    padding: 0 24px;
+}
+
+.technician-company-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.technician-company-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+
+/* IMPACT COMPANY WEBSITE LINK */
+.technician-company-link {
+    max-width: 1100px;
+    margin: 0 auto 48px;
+    padding: 0 24px;
+}
+
+.technician-company-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.technician-company-link a:hover {
+    opacity: 0.75;
+}
+
+/* SELECTED WORK SITES */
+.technician-worksites {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.technician-worksite-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.technician-worksite-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    padding: 24px;
+    color: var(--text);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.technician-worksite-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.technician-worksite-number {
+    margin-bottom: 24px;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.technician-worksite-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+}
+
+.technician-worksite-card p {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.technician-worksite-link {
+    margin-top: auto;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media (max-width: 760px) {
+    .technician-worksite-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technician-worksite-card {
+        min-height: 200px;
+    }
+}
+
+
+.technician-worksite-card .technician-worksite-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 10px 16px;
+
+    color: var(--text);
+    background: var(--dark-surface);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.technician-worksite-card .technician-worksite-link:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+
+/* UAS project cards */
+
+.uas-project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.uas-project-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.uas-project-card .case-study-carousel {
+    width: 100%;
+    margin-top: auto;
+}
+
+.uas-project-card .case-study-carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.uas-project-card .case-study-carousel-slide {
+    margin: 0;
+}
+
+.uas-project-card .case-study-carousel-slide[hidden] {
+    display: none;
+}
+
+.uas-project-card .case-study-carousel-slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: var(--dark-surface);
+    border-radius: var(--radius);
+}
+
+.uas-project-card .case-study-carousel-slide figcaption {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.uas-project-card .case-study-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.uas-project-card .case-study-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .uas-project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .uas-project-grid {
+        grid-template-columns: 1fr;
+    }
 }

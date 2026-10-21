@@ -24,6 +24,7 @@
     </a>
 </div>
 
+
 <main class="case-study">
 
     <!-- HERO: INTRODUCTION + FULL-WIDTH IMAGE -->
@@ -37,9 +38,8 @@
             <p class="case-study-hero-intro">
                 Originally starting as a subdrone mount for UBC UAS' side VTOL
                 project, I designed a permanent magnet that could be turned on
-                and off through simple rotation. This project involved
-                research, design, iteration, and testing, and is now in its 
-                final testing stages.
+                and off through simple rotation. This project involved research,
+                design, iteration, and testing, and is now in its final testing stages.
             </p>
 
             <div class="case-study-meta">
@@ -51,9 +51,48 @@
 
         <figure class="case-study-hero-image case-study-hero-image--full">
             <img src="../Images/Switch Magnet CAD.png"
-                 alt="[Description of the overall project]">
+                 alt="CAD model of the mechanical on/off magnet">
             <figcaption></figcaption>
         </figure>
+
+    </section>
+
+    <!-- QUICK OVERVIEW: HOW IT WORKS -->
+    <section class="case-study-section" id="how-it-works">
+
+        <div class="case-study-section-details">
+            <p class="case-study-eyebrow">The Concept</p>
+            <h2>How It Works</h2>
+
+            <p>
+                The idea behind my design was simple: instead of using electricity
+                to switch a magnet on and off, I wanted to mechanically redirect
+                its magnetic flux by rotating the magnets inside a compact casing.
+                This allows the magnet to hold the subdrone without requiring
+                continuous electrical power, and allows it to release the subdrone
+                extremely easily.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>On:</strong> The magnets are positioned such that the 
+                    like-metal core polarities (+ on +) align, directing most of the
+                    magnetic flux through the external holding surface, allowing
+                    the magnet to attach to the subdrone.
+                </li>
+                <li>
+                    <strong>Off:</strong> Rotating the mechanism changes the
+                    matal core alignment to be opposing (+ on -), redirecting more of the flux through
+                    the internal steel core connection and reducing the external holding force.
+                </li>
+            </ul>
+
+            <p>
+                The mechanism is designed to be actuated through a simple servo
+                rotation, providing a lightweight alternative to an electrically
+                switched magnetic system.
+            </p>
+        </div>
 
     </section>
 
@@ -82,6 +121,7 @@
             <div class="case-study-section-intro">
                 <p class="case-study-eyebrow">01 - Engineering Process</p>
                 <h2>Problem &amp; Objectives</h2>
+
                 <p>
                     In January 2026, I was tasked with working on UAS' side project:
                     A gass-powered Mothership VTOL drone. The goal of this drone 
@@ -103,15 +143,14 @@
 
                         <figure class="case-study-carousel-slide">
                             <img src="../Images/VTOL 2026.png"
-                                 alt="[Initial setup or project context]">
+                                 alt="UBC UAS Mothership VTOL drone">
                             <figcaption>VTOL Mothership Drone</figcaption>
                         </figure>
 
                         <figure class="case-study-carousel-slide" hidden>
                             <img src="../Images/Fuselage .png"
-                                 alt="[Initial concept or requirements]">
-                            <figcaption>Fuselage Magnet Housing
-                            </figcaption>
+                                 alt="Fuselage layout for the magnet housing">
+                            <figcaption>Fuselage Magnet Housing</figcaption>
                         </figure>
 
                     </div>
@@ -141,28 +180,24 @@
 
         <div class="case-study-section-details">
             <h3>Objectives and Constraints</h3>
+
             <p>
-                The challenge for me? Designing a reliable subdrone mounting system
-                that could funnel the subdrone into place even if the landing wasn't
-                100% accurate, securely lock it in place during flight, and fit within
-                the confined space of the fuselage.
+                The challenge for me? Designing a reliable mounting system
+                that could guide the subdrone into place even if the landing
+                wasn't 100% accurate, securely hold it during flight, and fit
+                within the confined space of the fuselage.
             </p>
 
             <p>
-                After extensive research into electro-mechanical switch magnets,
-                magnetic chucks, mechanical landing locks, and other options, as well
-                as consulting my subteam lead, we settled on using magnetic force to
+                After researching electro-mechanical switch magnets, magnetic
+                chucks, mechanical landing locks, and other options, and
+                consulting my subteam lead, we settled on magnetic force to
                 hold the drone in place.
-            </p>
-
-            <p>
-                This decision ultimately came down to reliability. Mechanical holding
-                systems can have some shaking or wiggle room, potentially allowing
-                components to loosen during flight. A magnetic connection offered a
-                different approach to keeping the subdrone securely attached. From
-                here, I had to design a magnetic system that could maintain a strong
-                connection to the subdrone <strong>without requiring electrical power
-                to sustain the connection.</strong>
+                Reliability was a major consideration. Mechanical locking
+                systems can introduce movement or play, so I wanted to explore
+                an alternative. My goal was to develop a magnetic system that
+                could maintain a strong connection to the subdrone
+                <strong>without requiring electrical power to sustain the connection.</strong>
             </p>
         </div>
 
@@ -173,12 +208,15 @@
 
         <div class="case-study-section-top">
             <div class="case-study-section-intro">
-                <p class="case-study-eyebrow">02 / Engineering Process</p>
-                <h2>Engineering Design</h2>
+                <p class="case-study-eyebrow">02 - Engineering Process</p>
+                <h2>Research and Concept Generation</h2>
+
                 <p>
-                    [Describe the design approach, calculations, CAD,
-                    circuit design, algorithms, or component selection
-                    that were relevant to this project.]
+                    For this project, I did extensive research at a wide variety of magnetic and electromagnetic topics,
+                    aided by my Electromagnetism II class at the time. This research into magnetic systems that sustain
+                    force without sustained electrical power led me down two possible routes,
+                    Magnetic Chucks, and Electro-permanent Magnets. Both paths came with its own challenges and considerations,
+                    leading me to do a sufficient amount of research into each option, as described below.
                 </p>
             </div>
 
@@ -187,15 +225,15 @@
                     <div class="case-study-carousel-viewport">
 
                         <figure class="case-study-carousel-slide">
-                            <img src="../Images/project2-design-1.jpg"
-                                 alt="[Design, CAD model, or schematic]">
-                            <figcaption>[Image caption]</figcaption>
+                            <img src="../Images/Magnetic Chuck.png"
+                                 alt="Permanent magnetic chuck">
+                            <figcaption>Permanent Magnetic Chuck</figcaption>
                         </figure>
 
                         <figure class="case-study-carousel-slide" hidden>
-                            <img src="../Images/project2-design-2.jpg"
-                                 alt="[Detailed design or component]">
-                            <figcaption>[Image caption]</figcaption>
+                            <img src="../Images/EPM Diagram.png"
+                                 alt="Diagram illustrating an electro-permanent magnet">
+                            <figcaption>Electro-Permanent Magnet Diagram</figcaption>
                         </figure>
 
                     </div>
@@ -223,26 +261,187 @@
             </div>
         </div>
 
+        <!-- MAGNETIC CHUCK RESEARCH -->
         <div class="case-study-section-details">
-            <h3>Key Design Decisions</h3>
+            <h3>Magnetic Chuck Research</h3>
+
             <p>
-                [Explain important design decisions, alternatives considered,
-                and why you selected your final approach.]
+                The first option I explored was a permanent magnetic chuck,
+                where rotating a lever reorients magnets inside the casing
+                to redirect magnetic flux and switch the holding force.
+                This approach had several benefits, but also some drawbacks
+                for my design.
+            </p>
+
+            <div class="pros-cons-container">
+
+                <div class="pros">
+                    <h4>Advantages</h4>
+                    <ul>
+                        <li>No continuous electrical power required</li>
+                        <li>Strong magnetic holding force</li>
+                        <li>Flux can be redirected to reduce external magnetic fields</li>
+                    </ul>
+                </div>
+
+                <div class="cons">
+                    <h4>Disadvantages</h4>
+                    <ul>
+                        <li>Turning mechanism can require substantial force</li>
+                        <li>Can be costly</li>
+                        <li>Can be too heavy for weight-sensitive applications</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p>
+                Although this option showed promise, the weight of a complete
+                magnetic chuck was a concern. The Mothership VTOL had a strict
+                weight limit because it needed to carry both the subdrone and
+                a gas engine, making a lightweight design essential.
+            </p>
+        </div>
+
+        <!-- EPM RESEARCH -->
+        <div class="case-study-section-details">
+            <h3>Electro-Permanent Magnet Research</h3>
+
+            <p>
+                The second option I explored was an electro-permanent magnet
+                (EPM). Depending on the design, an EPM uses an electrical
+                current pulse to switch its magnetic state, allowing it to
+                maintain its holding force without continuous power. I liked
+                this approach because electrical power was only needed to
+                switch its state, rather than sustain the hold.
+            </p>
+
+            <div class="pros-cons-container">
+
+                <div class="pros">
+                    <h4>Advantages</h4>
+                    <ul>
+                        <li>No continuous electrical power required to hold</li>
+                        <li>Compact design</li>
+                        <li>Strong magnetic holding force</li>
+                    </ul>
+                </div>
+
+                <div class="cons">
+                    <h4>Disadvantages</h4>
+                    <ul>
+                        <li>Switching can require high current for strong magnets</li>
+                        <li>Can be costly to purchase</li>
+                        <li>Can be difficult to source</li>
+                        <li>Requires consideration of complex magnetic properties</li>
+                        <li>Electrical component failure could affect switching</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p>
+                As I hadn't heard of EPMs before, I really liked this idea.
+                However, the disadvantages outweighed the benefits for my
+                particular application. Still, the research ended up inspiring
+                my final concept when I combined the idea of controlling
+                magnetic flux with the mechanical approach of a magnetic chuck.
+            </p>
+        </div>
+
+        <!-- FINAL CONCEPT -->
+        <div class="case-study-section-details">
+            <h3>Final Concept - Mechanical On/Off Magnet</h3>
+
+            <div class="case-study-section-top">
+                <div class="case-study-section-intro">
+                    <p>
+                        In the Wikipedia article on EPMs, I came across the image shown here
+                        to explain how they work. It captures a similar principle to a magnetic
+                        chuck, where permanent magnets are arranged to redirect magnetic flux,
+                        while illustrating how an EPM can control its external magnetic field
+                        to release its hold.
+                    </p>
+
+                    <p>
+                        Looking at this image made me think, "What if, rather than reorienting
+                        the magnets inside a magnetic chuck, I moved them to redirect their
+                        fields?" From this thought, I made a rough sketch on paper of what I
+                        was looking for, then found some similar concepts online.
+                    </p>
+
+                    <p>
+                        From there, I refined the design to address issues I identified
+                        in those concepts and created an initial CAD prototype of my
+                        Mechanical On/Off Magnet. It offered many of the benefits of
+                        the alternatives without as many of their disadvantages.
+                    </p>
+                </div>
+
+                <div class="case-study-section-figure">
+                    <figure class="case-study-carousel-slide">
+                        <img src="../Images/Switch Magnet Inspiration.png"
+                             alt="Reference image illustrating magnetic flux redirection">
+                        <figcaption>
+                            Reference image that inspired my mechanical switching concept.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="pros-cons-container">
+
+                <div class="pros">
+                    <h4>Advantages</h4>
+                    <ul>
+                        <li>No continuous electrical power required to hold</li>
+                        <li>Compact design</li>
+                        <li>Lightweight plastic casing</li>
+                        <li>Can be controlled through simple servo rotation</li>
+                        <li>Can be manufactured in-house</li>
+                    </ul>
+                </div>
+
+                <div class="cons">
+                    <h4>Disadvantages</h4>
+                    <ul>
+                        <li>Required further testing to determine the best magnets to use</li>
+                        <li>More time-consuming to develop than purchasing an existing solution</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p>
+                This concept seemed much more promising, as it met our weight
+                requirements while addressing the technical requirements of
+                the project.
             </p>
         </div>
 
     </section>
 
-    <!-- 03: FABRICATION & INTEGRATION -->
+    <!-- 03: FABRICATION & OPERATION -->
     <section class="case-study-section" id="fabrication">
 
         <div class="case-study-section-top">
             <div class="case-study-section-intro">
-                <p class="case-study-eyebrow">03 / Engineering Process</p>
-                <h2>Fabrication &amp; Integration</h2>
+                <p class="case-study-eyebrow">03 - Engineering Process</p>
+                <h2>Fabrication &amp; Operation</h2>
+
                 <p>
-                    [Describe how you built the design and integrated
-                    its mechanical, electrical, and software components.]
+                    For the first prototype, I designed the mechanism to rotate
+                    through a limited range of 60 degrees. I created guide slots
+                    for bolts with locknuts to restrict the motion and used a
+                    central M10 bolt as the rotation axle.
+                </p>
+
+                <p>
+                    I then designed six square openings through the two shells
+                    and circular holes to hold the permanent magnets. Their
+                    polarities had to be arranged carefully so that rotating
+                    the mechanism would change the magnetic flux path between
+                    the two operating positions.
                 </p>
             </div>
 
@@ -251,15 +450,15 @@
                     <div class="case-study-carousel-viewport">
 
                         <figure class="case-study-carousel-slide">
-                            <img src="../Images/project2-fabrication-1.jpg"
-                                 alt="[Fabrication or assembly process]">
-                            <figcaption>[Image caption]</figcaption>
+                            <img src="../Images/Prototype CAD.png"
+                                 alt="Mechanical magnet prototype fabrication">
+                            <figcaption>First prototype CAD Model</figcaption>
                         </figure>
 
                         <figure class="case-study-carousel-slide" hidden>
-                            <img src="../Images/project2-fabrication-2.jpg"
-                                 alt="[Integrated component or subsystem]">
-                            <figcaption>[Image caption]</figcaption>
+                            <img src="../Images/Switch Mag Proto.jpg"
+                                 alt="Mechanical magnet prototype assembly">
+                            <figcaption>Prototype Fabrication</figcaption>
                         </figure>
 
                     </div>
@@ -285,14 +484,6 @@
                          data-carousel-dots></div>
                 </div>
             </div>
-        </div>
-
-        <div class="case-study-section-details">
-            <h3>Build and Integration</h3>
-            <p>
-                [Explain your contribution to manufacturing, assembly,
-                wiring, programming, and integration challenges.]
-            </p>
         </div>
 
     </section>
@@ -302,11 +493,24 @@
 
         <div class="case-study-section-top">
             <div class="case-study-section-intro">
-                <p class="case-study-eyebrow">04 / Engineering Process</p>
+                <p class="case-study-eyebrow">04 - Engineering Process</p>
                 <h2>Testing &amp; Iteration</h2>
                 <p>
-                    [Explain how you tested the system, what you observed,
-                    and how you used those observations to improve it.]
+                    Unfortunately, I found that this first model did not support nearly
+                    strong enough magnets to pick up even the most minor of objects. 
+                    Additionally, I had originally chosen cold-rolled steel for the 
+                    metal cores of the prototype, as I had found others online using
+                    it for similar applications. Through this testing, I found it to not
+                    nearly be permeable enough, and found that I had to make a few alterations
+                    for my next prototype.
+                </p>
+
+                <p>
+                    Namely, I made the next prototype much bigger. This would allow me to
+                    support much larger magnets, and conduct testing with them to find the optimal
+                    metal core material to use. Additionally, after further research, I have decided
+                    to try and use soft-iron cores for the next prototype, as it has a much greater
+                    permeability than that of the steel I had previously used.
                 </p>
             </div>
 
@@ -315,15 +519,27 @@
                     <div class="case-study-carousel-viewport">
 
                         <figure class="case-study-carousel-slide">
-                            <img src="../Images/project2-testing-1.jpg"
+                            <img src="../Images/Switch Magnet CAD.png"
                                  alt="[Test setup or measurement]">
-                            <figcaption>[Image caption]</figcaption>
+                            <figcaption>MOFM V2</figcaption>
                         </figure>
 
                         <figure class="case-study-carousel-slide" hidden>
-                            <img src="../Images/project2-testing-2.jpg"
+                            <img src="../Images/Top Shell Slider CAD.png"
                                  alt="[Later test or design iteration]">
-                            <figcaption>[Image caption]</figcaption>
+                            <figcaption>New Rotation Slider Slot</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../Images/Top Shell Magnet Hole CAD.png"
+                                 alt="[Later test or design iteration]">
+                            <figcaption>Magnet Integration Gaps</figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../Images/SM2 Side.jpg"
+                                 alt="[Later test or design iteration]">
+                            <figcaption>3D Printed and Bolted Casing</figcaption>
                         </figure>
 
                     </div>
@@ -354,41 +570,60 @@
         <div class="case-study-section-details">
             <h3>Testing and Improvements</h3>
             <p>
-                [Describe a specific test, issue, observation, and the
-                change you made in response.]
+                As can be seen through the images, I have made a variety of upgrades to the new version of the magnet.
             </p>
+            
+            <h4>Design Iterations</h4>
+            <ul>
+                <li>New Range of Motion - I changed the range of motion to be 180 degrees as opposed to 60,
+                    resulting in the magnet needing 2 larger cores rather 6. This allows for one larger magnet
+                    to be used as opposed to various smaller ones.
+                </li>
+                <li>Internal Sliding Slot - I changed the slot to be encapsulated within the casing, preventing
+                    it from becoming stuck on external piecs or jamming into fingers while rotating.
+                </li>
+                <li>
+                    Rotation Axis Bolt - I made the rotating bolt in the centre smaller and able to freely slide within
+                    one of the shells, allowing for smoother rotation as opposed to the fitted hex designs on the previous
+                    prototype.
+                </li>
+            </ul>
+
         </div>
 
     </section>
 
-    <!-- 05: RESULTS — ONE IMAGE ONLY -->
+    <!-- 05: NEXT STEPS — ONE IMAGE ONLY -->
     <section class="case-study-section case-study-results" id="results">
 
         <div class="case-study-results-copy">
-            <p class="case-study-eyebrow">05 / Outcome</p>
-            <h2>Results</h2>
+            <p class="case-study-eyebrow">05 - Outcome</p>
+            <h2>NEXT STEPS</h2>
 
             <p>
-                [Summarize what the project achieved and how the final
-                outcome compared with the original objectives.]
+                The next steps for this project is to order the magnets I designed it for off of amazon,
+                then machine the soft iron cores to fit inside of it. Following this, further testing
+                will likely be necessary before a final iteration is made, then I will potentially 
+                attempt to scale it down to a more compact design.
             </p>
 
             <p>
                 <strong>Key outcome:</strong>
-                [Add a measurable result or explain what you demonstrated.]
+                Developed a lightweight, mechanically switched permanent magnet concept that can be actuated through simple 
+                servo rotation, providing a potential solution for securely carrying and releasing a subdrone without continuous 
+                electrical power.
             </p>
 
             <p>
                 <strong>What I learned:</strong>
-                [Explain an important lesson or possible next improvement.]
+                <ul>
+                    <li>Mechanical Design</li>
+                    <li>Mechanical Iteration</li>
+                    <li>Design-Based Research</li>
+                    <li>Electromagnetic Analysis/Research</li>
+                </ul>
             </p>
         </div>
-
-        <figure class="case-study-results-image">
-            <img src="../Images/project2-results.jpg"
-                 alt="[Description of the final project result]">
-            <figcaption>[Caption for the final result image]</figcaption>
-        </figure>
 
     </section>
 
