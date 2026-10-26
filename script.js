@@ -182,3 +182,56 @@ if (lightbox && lightboxImage && lightboxClose) {
         }
     });
 }
+
+/* ==========================================
+   VIDEO LIGHTBOX
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = document.getElementById("video-lightbox");
+    const lightboxVideo = document.getElementById("video-lightbox-player");
+    const lightboxCaption = document.getElementById("video-lightbox-caption");
+    const closeButton = document.getElementById("video-lightbox-close");
+
+    if (!lightbox || !lightboxVideo || !closeButton) return;
+
+    const closeLightbox = () => {
+        lightboxVideo.pause();
+        lightboxVideo.removeAttribute("src");
+        lightboxVideo.load();
+
+        lightbox.classList.remove("is-open");
+        document.body.style.overflow = "";
+    };
+
+    document.querySelectorAll(".case-study-video video").forEach(video => {
+        video.addEventListener("click", () => {
+            const source = video.querySelector("source");
+            if (!source) return;
+
+            lightboxVideo.src = source.src;
+            lightboxCaption.textContent =
+                video.closest("figure")?.querySelector("figcaption")?.textContent.trim() || "";
+
+            lightbox.classList.add("is-open");
+            document.body.style.overflow = "hidden";
+
+            lightboxVideo.load();
+            lightboxVideo.play().catch(() => {});
+        });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", event => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+            closeLightbox();
+        }
+    });
+});

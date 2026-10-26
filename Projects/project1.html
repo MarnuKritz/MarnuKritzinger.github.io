@@ -34,8 +34,7 @@
         <div class="case-study-hero-content">
             <p class="case-study-eyebrow">Project 01</p>
 
-            <h1>Robot Summer Autonomous Mars Robot (T.A.M.K) - NOTE: PAGE IS UNDER CONSTRUCTION, SORRY! Feel Free
-                to check out anything else on the website :)
+            <h1>Robot Summer Autonomous Mars Robot (T.A.M.K) 
             </Ri:a></h1>
 
             <p class="case-study-hero-intro">
@@ -51,7 +50,7 @@
         </div>
 
         <figure class="case-study-hero-image case-study-hero-image--full">
-            <img src="../images/project1-hero.jpg"
+            <img src="../images/TAMK Diag View.jpg"
                  alt="UBC ENPH253 Team 3 - T.A.M.K">
             <figcaption></figcaption>
         </figure>
@@ -103,51 +102,8 @@
                     These mission objectives tested a range of abilities, from mechanical manipulation and structural assembly to
                     autonomous navigation and computer vision. The 5 tasks teams could choose from were as follows:
                 </p>
-            </div>
 
-            <div class="case-study-section-figure">
-                <div class="case-study-carousel" data-case-carousel>
-                    <div class="case-study-carousel-viewport">
-
-                        <figure class="case-study-carousel-slide">
-                            <img src="../images/253-Comp-Layout.png"
-                                 alt="ENPH253 Mars Competition Course Layout">
-                            <figcaption>ENPH253 Mars Competition Course Layout</figcaption>
-                        </figure>
-
-                        <figure class="case-study-carousel-slide" hidden>
-                            <img src="../images/Competition-Surface.png"
-                                 alt="[Initial concept or requirements]">
-                            <figcaption>3D Competition Surface</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <div class="case-study-carousel-controls">
-                        <button class="case-study-carousel-arrow"
-                                type="button" data-carousel-previous>
-                            ← Previous
-                        </button>
-
-                        <span class="case-study-carousel-position"
-                              data-carousel-position aria-live="polite">
-                            1 / 2
-                        </span>
-
-                        <button class="case-study-carousel-arrow"
-                                type="button" data-carousel-next>
-                            Next →
-                        </button>
-                    </div>
-
-                    <div class="case-study-carousel-dots"
-                         data-carousel-dots></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="case-study-section-details">
-            <h3>Mission Objectives</h3>
+                <h3>Mission Objectives</h3>
             <ol>
                     <li>
                         <strong>Rock retrieval (2 points):</strong>
@@ -178,6 +134,71 @@
                 <p>
                     Our team chose to focus on all tasks except the <strong>habitat construction</strong>, maximizing our potential points at 9
                 </p>
+            </div>
+
+            
+            <div class="case-study-section-figure">
+
+                <!-- IMAGE CAROUSEL -->
+                <div class="case-study-carousel" data-case-carousel>
+                    <div class="case-study-carousel-viewport">
+
+                        <figure class="case-study-carousel-slide">
+                            <img src="../images/253-Comp-Layout.png"
+                                alt="ENPH 253 Mars Competition Course Layout"
+                                loading="lazy">
+                            <figcaption>
+                                ENPH 253 Mars Competition Course Layout
+                            </figcaption>
+                        </figure>
+
+                        <figure class="case-study-carousel-slide" hidden>
+                            <img src="../images/Competition-Surface.png"
+                                alt="Three-dimensional Mars rover competition course"
+                                loading="lazy">
+                            <figcaption>
+                                3D Competition Surface
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="case-study-carousel-controls">
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-previous>
+                            ← Previous
+                        </button>
+
+                        <span class="case-study-carousel-position"
+                            data-carousel-position aria-live="polite">
+                            1 / 2
+                        </span>
+
+                        <button class="case-study-carousel-arrow"
+                                type="button" data-carousel-next>
+                            Next →
+                        </button>
+                    </div>
+
+                    <div class="case-study-carousel-dots"
+                        data-carousel-dots></div>
+                </div>
+
+                <!-- ROBOT DEMONSTRATION VIDEO -->
+                <figure class="case-study-video">
+                    <video autoplay muted loop playsinline preload="metadata"
+                        aria-label="ENPH 253 autonomous Mars rover demonstration">
+                        <source src="../images/RUN1.mp4" type="video/mp4">
+                        Your browser does not support embedded videos.
+                    </video>
+
+                    <figcaption>
+                        ENPH 253 — T.A.M.K. in Action
+                    </figcaption>
+                </figure>
+
+            </div>
+
         </div>
 
     </section>
@@ -192,9 +213,15 @@
                 <p>
                     As the Mechanical Lead for our team, I was responsible for the design and fabrication of most mechanical components, 
                     including the entire chassis, drivetrain, lead screw mechanism, limit-switch integration, absolute-positioning 
-                    deadwheel systems, and chain-lift system. I also contributed to soldering and assembling protoboard circuits, 
+                    deadwheel systems, and chain-lift system, all of which I also detailed in our mandatory design proposal. 
+                    I also contributed to soldering and assembling protoboard circuits, 
                     while taking primary responsibility for electrical integration between systems, including PCB management, 
                     wiring connections, and cable routing and management.
+                </p>
+
+                <p>
+                    Below each of my most substantial systems' design processes are outlined, including purpose, design rules, mechanical design 
+                    decisions, functionality, and integration steps.
                 </p>
             </div>
 
@@ -211,7 +238,7 @@
                         <figure class="case-study-carousel-slide" hidden>
                             <img src="../images/TAMK-Segmented.png"
                                  alt="[Detailed design or component]">
-                            <figcaption>[Image caption]</figcaption>
+                            <figcaption>T.A.M.K. Modularity View</figcaption>
                         </figure>
 
                     </div>
@@ -240,11 +267,153 @@
         </div>
 
         <div class="case-study-section-details">
-            <h3>Key Design Decisions</h3>
+            <h3>Chassis + Drive Systems Design</h3>
+            <h4>
+                Purpose: Provide the framing, containment, and motion of the robot to carry all systems throughout the course.
+            </h4>
+            <h4>
+                Design Rules/Limitations:
+            </h4>
+                <ul>
+                    <li>Must never extend beyond 18" in length in any direction</li>
+                    <li>Must not purchase over $200 worth of materials (including electrical and software)</li>
+                    <li>Must have a switch to enable/disable power from our designated 4s and 2s LiPo batteries</li>
+                </ul>
+            <h4>
+                Design Decisions
+            </h4>
+            <h5>Drivetrain</h5>
             <p>
-                [Explain important design decisions, alternatives considered,
-                and why you selected your final approach.]
+                The robot is powered by a balanced four-wheel drive system designed around using Mecanum wheels for full
+                360deg movement control, using practically identical motors and gearboxes to power each of the 4 motors. 
+                This design stood out amongst that of our competitors, as majority of the other teams were using an encoded dual 
+                rear-wheel drive system with a caster wheel in the front. We opted for this design because we needed 
+                optimal space within chassis to support all our systems, but still wanted to be able to turn on the spot 
+                to make some of our tasks simpler. As such, meccanum wheels seemed a natural direction to go, and we were 
+                excited for the challenge they brought with them. We were initially concerned that the 4-wheel drive system 
+                would cause our robot to struggle going up the ramp, as the robot might have been too ridgid or the weight 
+                distribution may have caused it to slip. Fortunately due to our choice of motors, neither of these issues were 
+                prevalent.
             </p>
+
+            <h5>Deadwheel positioning System</h5>
+            <p>
+                However, with the choice of a four-wheel maccanum drive system of course came other challenges. For instance, we 
+                were no longer able to use encoded motors, as meccanum wheels rely on a degree of slipping to allow for any 
+                motion, making any encoders mounted to them innacurate. This would then also make it difficult for us to navigate
+                the course, as it was standard that the robots follow the line of tape throughout the course, requiring encoders
+                to navigate any distance strayed from the path of the line to accomplish tasks.
+            </p>
+
+            <p>
+                I resolved this problem by proposing and designing two mechanical deadwheels, mounted in seperate x and y orientations
+                within the centre of our drive motors. These were free-spinning wheels with rollers perpendicular to their rolling 
+                directions, allowing them to translate in all directions without struggle. The deadwheels were mounted in perpendicular
+                directions, one facing our defined "x" direction and one along "y". The goal of these wheels were to mount them
+                with a magnetic encoder and allow them to freely pivot to the ground, so as the robot drives the wheels turn freely and 
+                indicate to us how far we have travelled. Surprisingly, this system worked practically flawlessly after the second iteration,
+                and allowed us to completely avoid tape following at all, instead defining a start position on the course and plot out the 
+                movement of the robot through defined coordinate points and orientations we instructed it to travel to. As can be seen,
+                the encoders were simply mounted on the side of the carriage, with the magnet being mounted within the spinning axle rod.
+                I then drilled 4 holes through the central frame of the wheel, and designed and printed a PRECISE mount that would slide 
+                into a guide slot in the axle and bolt into the side of the wheel, securing the system within the carriage. The axle would 
+                then spin on ball bearings, while the carriage itself spun on bearings in the carriage, allowing it to pivot and stay on the 
+                ground at all times. A simple press-fit cap was inserted at the other end of the axle to keep it from translating back and forth.
+            </p>
+
+            <h5>Chassis Design</h5>
+            <p>
+                The chassis of T.A.M.K. was HEAVILY iterated over, though many key aspects remained the same. As can be seen in the segmented 
+                view from the carousel above, the chassis was designed to be completely modular, allowing all team members to work with different 
+                parts of the chassis at any given time to maximize efficiency. For example, we did ample testing with the front chassis-elevator-leadscrew
+                unit while another team member was drivetrain tuning with the entire rest of the chassis, as we were able to simply remove all electrical 
+                and mechanical components by undoing a few bolts.
+            </p>
+
+            <p>
+                <Strong>Front Chassis:</Strong> The front chassis was designed to house our main manipulator systems. including our elevator claw and 
+                lead-spear system (to be touched upon in following sections). This required designing around attatchment points to the baseplate and rear chassis,
+                integrating 2 stepper motors, an entire lead screw slider with sufficient enough room to move, while being restricted enough to slide rather than 
+                rotate, adding securment holes for the elevator unit, and adding gaps and internal pathways to route wiring from all the motor systems and 3 integrated 
+                limit switches up to our ESP boards.
+            </p>
+
+            <p>
+                <Strong>Rear Chassis</Strong> The rear chassis is comprised of 5 components: The drive-chassis, three wiring plate frame layers, and the 
+                top chassis/rock and battery housing unit. 
+                <ul>
+                    <li><strong>Drive-chassis:</strong> Minimal design considerations were needed for the drive chassis outside of attatchment points to the 
+                    front chassis, wheelwell depths/motor interface locations, and bolt holes to support an internal hanging wiring frame to house our 
+                    H-bridge and metal detecting units. </li>
+                    <li><strong>Wiring Plates/Frames:</strong> 3 Wiring plates and their respective frames were included in the design for the robot. 
+                    the main purpose of these plates were to organize and designate specific slots for our PCB units, as well as providing easy plug-in 
+                    access to our ESP boards and slots to include our flip-switches. The wiring plates themselves also included holes to other layers, 
+                    allowing for cross-layer integration between circuit boards being entirely internalized within the robot.</li>
+                    <li><strong>Top-chassis:</strong> The top chassis was designed to sit nearly flush with the elevator claw when tilted back, 
+                    acting as a landing place for the claw to flip over and dump the aluminium rock, allowing us to easily carry it throughout the course
+                    on top of the robot. Additionally, I designed our LiPo batteries to sit on the exterior of the top-chassis, allowing us easy access to 
+                    unplug them in the scenario they became unsafe.</li>
+                </ul>
+
+                Additionally, we designed our robot chassis to fit within an 11"x11" area, well within our 18" confinement. This was done to provide me with additional
+                room, as I had an idea to "cheat" the solar pannel task by simply including a rigid "solar claw" that extended out the right side of our chassis, 
+                and would be angled and positioned procisely to be aligned with the loop of the solar pannel, allowing us to complete the solar pannel task by simply 
+                running our robot into the side of the solar pannel, then driving straight and allowing the claw to loop the cover and rip it off. I dubbed the final version
+                of this claw "EXODUS", named after the mass exodus of 6 tipped spike ends that protrude from it, as well as its goal of removing the pannel cover.
+            </p>
+
+            <h3>Elevator + Leadscrew Systems design</h3>
+            <h4>
+                Purpose: Translate parts of the course to and from the robot to accomplish tasks.
+            </h4>
+            Design Rules/Limitations:
+            </h4>
+                <ul>
+                    <li>Must never extend beyond 18" in length in any direction</li>
+                    <li>Must not purchase over $200 worth of materials (including electrical and software)</li>
+                </ul>
+            <h4>
+                Design Decisions
+            </h4>
+            <h5>Lead-Screw System (Name: The Spear)</h5>
+            <p>
+                This system was designed to overcome our main objective: Assembling the radio tower. The radio tower task, as can 
+                be seen in the course layout, was comprised of 3 parts: picking up the tower pieces, assembling the tower, and placing
+                the tower on the extruded aluminium box. The cylindrical tower pieces were laid out in a uniform plate FLAT on the 
+                ground, with their hollow insides pointing towards the course. There was then a piece of tape laid out from the main 
+                navigation tape line to the center of the layout plate, and a second piece of tape laid out from the navigation tape 
+                out towards the metal
+            </p>
+
+            <p>
+                Our plan? To align our robot with that central piece of tape, then assemble the tower ON the robot while it was 
+                completely stationary, then drive to the boss, center ourselves using a centering crescent, and simply lower the 
+                tower down onto the boss. This would make the task substantially easier, as our robot would never have to move to
+                realign itself with the towers that were not lined up along the central tape! The assembly process is shown here in this
+                video:
+            </p>
+
+            <p>
+                The Lead-Screw System had MANY design considerations involved with it, and was comprised of 4 components, the 
+                lead stepper, the spear-chassis, the spear unit, and the spear unit's centering crescent:
+                <ul>
+                    <li><strong>The Lead Stepper:</strong> Ordered off amazon, we used a Nema17 1.7A 40Ncm stepper motor with 
+                    a 300mm T8 lead screw and bearing attatched to it. Various design considerations were CRUCIAL to this system,
+                    such as the 300mm lead screw, as we needed the lead screw to span 164mm (the length that would reach all 3
+                    tower pieces). Additionally, consideration towards the stepper, where it was to sit, and how we were to get a 
+                    control wire to it was all considered and designed around. The culminated in the stepper being PERFECTLY fitted
+                    into the left side of the chassis, with a gap at the top for the control wire to route directly to the stepper
+                    easily. Additionally, the opposite end of the lead screw was mounted inside a ball bearing, which would be 
+                    perfectly pressfit into a gap at the other end of the front chassis. The strong holding torque of the stepper
+                    was crucial to making the system work, as the system relied on restricting a carriage within the slider space 
+                    from rotating, thus forcing the lead screw to translate it back and forth.</li>
+
+                    <li><strong>The Spear-chassis:</strong> The spear chassis was then designed in onshape with various design 
+                    considerations, mostly around allowing it to translate properly, as well as mounting the servo that would allow
+                    the spear to lift the </li>
+                </ul>
+            </p>
+
         </div>
 
     </section>
@@ -428,5 +597,20 @@
 </div>
 
 <script src="../script.js"></script>
+
+<div class="video-lightbox" id="video-lightbox">
+    <button
+        class="video-lightbox-close"
+        id="video-lightbox-close"
+        type="button"
+        aria-label="Close enlarged video"
+    >&times;</button>
+
+    <video id="video-lightbox-player" controls autoplay playsinline>
+    </video>
+
+    <p id="video-lightbox-caption"></p>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technical Experience | Marnu Kritzinger</title>
+    <meta name="description"
+          content="Selected university experience in robotics, programming, machine learning, and computer vision by Marnu Kritzinger, UBC Engineering Physics student.">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .technical-experience-media video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: contain;
+            background: var(--dark-surface);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="logo" href="../index.html">Marnu Kritzinger<span>.</span></a>
+        </nav>
+    </header>
+
+    <div class="back-to-projects">
+        <a href="../index.html#experience">
+            <span aria-hidden="true">←</span>
+            Back to Experience
+        </a>
+    </div>
+
+    <main class="small-projects-page">
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="small-projects-intro">
+            <p class="component-label">ENGINEERING PORTFOLIO</p>
+
+            <h1>Technical Experience</h1>
+
+            <p>
+                My studies at UBC have given me the opportunity to explore
+                a wide range of engineering disciplines beyond my larger
+                projects. Through university labs and coursework, I have
+                gained hands-on experience with robotic manipulators, ROS 2,
+                neural networks, and computer vision. This page highlights
+                some of that work, along with the skills I am continuing
+                to develop.
+            </p>
+        </section>
+
+
+        <!-- ======================================
+             EXPERIENCE 1 — QUANSER 4-DOF ARM
+        ======================================= -->
+        <section class="small-project" id="quanser-arm">
+
+            <div class="small-project-content">
+
+                <div class="small-project-heading">
+                    <div>
+                        <p class="component-label">TECHNICAL EXPERIENCE 01</p>
+                        <h2>Quanser 4-DOF Robotic Arm</h2>
+                    </div>
+
+                    <span class="project-status status-in-progress">
+                        University Lab · ELEC 442
+                    </span>
+                </div>
+
+                <p class="small-project-category">
+                    Robotics · Manipulator Kinematics · Robot Control
+                </p>
+
+                <h3>Experience Overview</h3>
+                <p>
+                    Through my Intro to Robotics coursework, I have had
+                    the opportunity to work with a Quanser 4-DOF robotic
+                    arm and explore the forward, inverse, and velocity
+                    kinematics used to describe and control its motion.
+                    Working with a physical manipulator has helped me
+                    connect the theory to the practical challenges of
+                    getting a robot to move as intended.
+                </p>
+
+                <h3>Applying What I've Learned</h3>
+                <p>
+                    This experience has also given me ideas for my own
+                    4-DOF servo robot arm project, where I am working
+                    toward applying similar kinematic models to a
+                    lower-cost, custom-built manipulator. When my
+                    professor offered an optional project opportunity
+                    alongside the course, I was keen to take it on.
+                    You can find more about that project on my
+                    <a href="smaller-projects.html">Smaller Projects page</a>.
+                </p>
+
+            </div>
+
+            <div class="small-project-Images technical-experience-media">
+
+                <figure class="case-study-carousel-slide">
+
+                    <video autoplay muted loop playsinline preload="metadata"
+                           aria-label="Silent demonstration of the Quanser 4-DOF robotic arm">
+                        <source src="../Images/QUANSER ARM.mp4" type="video/mp4">
+                        Your browser does not support embedded video.
+                    </video>
+
+                    <!-- PHOTO ALTERNATIVE:
+                    <img
+                        src="../Images/quanser-4dof-photo.jpg"
+                        alt="Quanser 4-DOF robotic arm used in a university lab"
+                        loading="lazy"
+                    >
+                    -->
+
+                    <figcaption>
+                        Quanser 4-DOF Robotic Arm — Hands-On Lab Experience
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             EXPERIENCE 2 — ROS 2 ROBOT CONTROL
+        ======================================= -->
+        <section class="small-project" id="ros2-robot-control">
+
+            <div class="small-project-content">
+
+                <div class="small-project-heading">
+                    <div>
+                        <p class="component-label">TECHNICAL EXPERIENCE 02</p>
+                        <h2>ROS 2 & Robot Control</h2>
+                    </div>
+
+                    <span class="project-status status-in-progress">
+                        Coursework · ENPH 353
+                    </span>
+                </div>
+
+                <p class="small-project-category">
+                    ROS 2 · Python · OpenCV · Gazebo Simulation
+                </p>
+
+                <h3>Experience Overview</h3>
+                <p>
+                    Through ENPH 353, I have been working with ROS 2
+                    to control a simulated robot using camera input.
+                    My line-following implementation uses a Python node
+                    to process the robot's camera feed and determine
+                    the movement commands needed to follow a line.
+                </p>
+
+                <h3>Implementation & Testing</h3>
+                <p>
+                    The node subscribes to <code>/camera/image_raw</code>
+                    and publishes velocity commands to <code>/cmd_vel</code>.
+                    Using Gazebo to simulate the robot has given me
+                    practical experience with ROS topics, camera-based
+                    feedback, and the process of testing and refining
+                    robot behaviour in response to sensor input.
+                </p>
+
+                <p>
+                    I am continuing to build my understanding of reliable
+                    robot control and how image processing can be used
+                    to guide a robot's movement.
+                </p>
+
+            </div>
+
+            <div class="small-project-Images technical-experience-media">
+
+                <figure class="case-study-carousel-slide">
+
+                    <video autoplay muted loop playsinline preload="metadata"
+                           aria-label="Silent demonstration of a ROS 2 line-following robot in simulation">
+                        <source src="../Images/LineFollower.mp4" type="video/mp4">
+                        Your browser does not support embedded video.
+                    </video>
+
+                    <!-- PHOTO ALTERNATIVE:
+                    <img
+                        src="../Images/ros2-line-following.png"
+                        alt="ROS 2 robot line-following simulation"
+                        loading="lazy"
+                    >
+                    -->
+
+                    <figcaption>
+                        ROS 2 — Camera-Based Line Following in Simulation
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             EXPERIENCE 3 — NEURAL NETWORKS / CNNs
+        ======================================= -->
+        <section class="small-project" id="machine-learning">
+
+            <div class="small-project-content">
+
+                <div class="small-project-heading">
+                    <div>
+                        <p class="component-label">TECHNICAL EXPERIENCE 03</p>
+                        <h2>Neural Networks & Computer Vision</h2>
+                    </div>
+
+                    <span class="project-status status-in-progress">
+                        Coursework · ENPH 353
+                    </span>
+                </div>
+
+                <p class="small-project-category">
+                    Python · Machine Learning · Neural Networks · CNNs · Computer Vision
+                </p>
+
+                
+                <h3>Experience Overview</h3>
+                <p>
+                    As part of my ENPH 353 coursework, I have trained both neural
+                    networks and convolutional neural networks (CNNs), exploring
+                    how models can learn patterns from data and apply them to
+                    recognition tasks. This has given me practical experience with
+                    machine-learning workflows while developing my programming
+                    and computer-vision skills.
+                </p>
+
+                <h3>Applying Machine Learning</h3>
+                <p>
+                    One application has been extending our simulated line-following
+                    robot to use a neural network to determine its movement from
+                    visual input, rather than relying solely on manually defined
+                    image-processing rules. This has introduced me to how
+                    learning-based approaches can be applied to robot control.
+                </p>
+
+                <p>
+                    I have also developed a CNN-based license-plate recognition
+                    workflow for a flock camera lab. This involves generating
+                    synthetic license-plate images and training a CNN to identify
+                    the characters on each plate. The confusion matrix shown
+                    alongside the project provides a way to evaluate how accurately
+                    the model classifies those characters.
+                </p>
+
+                <p>
+                    These projects contribute to our broader ENPH 353 work, including
+                    a semester-end autonomous robot competition where our simulated
+                    robots must identify clues and complete tasks in Gazebo. I am
+                    continuing to build my understanding of model training, image
+                    processing, and the practical limitations of these approaches.
+                </p>
+
+
+            </div>
+
+            <div class="small-project-Images technical-experience-media">
+
+                <figure class="case-study-carousel-slide">
+
+                    <!-- VIDEO ALTERNATIVE:
+                    <video autoplay muted loop playsinline preload="metadata"
+                           aria-label="Silent demonstration of a neural-network or computer-vision project">
+                        <source src="../Images/neural-network-demo.mp4" type="video/mp4">
+                        Your browser does not support embedded video.
+                    </video>
+                    -->
+
+                    <img
+                        src="../Images/CNN Erros.png"
+                        alt="Example output from neural-network training and computer-vision coursework"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Neural Networks & CNNs — Incorrect Model Predictions
+                    </figcaption>
+
+                    <img
+                        src="../Images/Neural Network Training.jpeg"
+                        alt="Example output from neural-network training and computer-vision coursework"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Neural Networks & CNNs — 2000 Image Confusion Matrix
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER LINK -->
+        <footer class="case-study-footer">
+            <a href="../index.html#experience">← Return to Experience</a>
+        </footer>
+
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="year"></span> Marnu Kritzinger
+        </p>
+    </footer>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="image-lightbox"
+         id="image-lightbox"
+         aria-hidden="true">
+
+        <button class="image-lightbox-close"
+                id="image-lightbox-close"
+                type="button"
+                aria-label="Close enlarged image">
+            &times;
+        </button>
+
+        <img id="image-lightbox-image" src="" alt="">
+
+        <p id="image-lightbox-caption"></p>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <div class="video-lightbox" id="video-lightbox">
+    <button
+        class="video-lightbox-close"
+        id="video-lightbox-close"
+        type="button"
+        aria-label="Close enlarged video"
+    >&times;</button>
+
+    <video id="video-lightbox-player" controls autoplay playsinline>
+    </video>
+
+    <p id="video-lightbox-caption"></p>
+</div>
+
+</body>
+</html>
