@@ -2905,3 +2905,27 @@ main {
     text-align: center;
     font-size: 0.9rem;
 }
+
+
+/* Allow text to flow around the project image */
+.small-project-content .small-project-Images {
+    float: right;
+    width: 42%;
+    margin: 0 0 1.5rem 2rem;
+}
+
+/* Keep the image within its floated container */
+.small-project-content .small-project-Images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Return to a stacked layout on mobile */
+@media (max-width: 768px) {
+    .small-project-content .small-project-Images {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem;
+    }
+}
