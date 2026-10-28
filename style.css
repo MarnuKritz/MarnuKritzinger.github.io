@@ -2929,3 +2929,16 @@ main {
         margin: 0 0 1.5rem;
     }
 }
+
+.case-study-results-image {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.case-study-results-image img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
